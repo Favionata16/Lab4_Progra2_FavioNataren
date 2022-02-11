@@ -52,7 +52,7 @@ public abstract class Aldeanos {
     
     @Override
     public String toString() {
-        return "Aldeanos{" + " Nombre: " + nombre + ", Apellidos: " + apellido + " }";
+        return "Aldeano{" + " Nombre: " + nombre + ", Apellido: " + apellido;
     }
        
 }
