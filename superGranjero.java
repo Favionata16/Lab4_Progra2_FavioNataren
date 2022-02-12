@@ -12,9 +12,17 @@ public class superGranjero extends Aldeanos {
         super(nombre, apellido, edad, vida);
     }
 
-    public int ataque() {
-        return 1000;
+     public double ataque(Aldeanos persona){
+        if (persona instanceof herrero) {
+            return 100+100*0.01;
+        }
+        if (persona instanceof explosivos) {
+            return 100+100*0.15;
+        }else{
+            return 100;
+        }
     }
+
 
     @Override
     public String toString() {

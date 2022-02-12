@@ -12,7 +12,7 @@ public class pacifista extends Aldeanos {
         super(nombre, apellido, edad, vida);
     }
 
-    public int ataque() {
+    public double ataque(Aldeanos aldeano){
         return 0;
     }
 

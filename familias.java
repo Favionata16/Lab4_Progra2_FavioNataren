@@ -7,9 +7,6 @@ public class familias {
     ArrayList<Aldeanos> Aldeanos = new ArrayList();
     String apellido;
 
-    public familias() {
-    }
-
     public familias(String apellido) {
         this.apellido = apellido;
     }

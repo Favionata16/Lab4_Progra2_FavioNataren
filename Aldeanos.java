@@ -54,5 +54,8 @@ public abstract class Aldeanos {
     public String toString() {
         return "Aldeano{" + " Nombre: " + nombre + ", Apellido: " + apellido;
     }
+    
+        public abstract double ataque(Aldeanos persona);
+
        
 }

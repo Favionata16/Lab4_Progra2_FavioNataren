@@ -8,12 +8,22 @@ package Lab4P2_FavioNataren_22141210;
 
 public class herrero extends Aldeanos {
 
-    public herrero(String nombre, String apellido, int edad, int puntos_vid) {
-        super(nombre, apellido, edad, puntos_vid);
+    int d;
+    public herrero(String nombre, String apellido, int edad, int vida, int dano) {
+        super(nombre, apellido, edad, vida);
+        this.d=d;
+
     }
 
-    public int ataque() {
-        return 0;
+     public double ataque(Aldeanos aldeano){
+        if (aldeano instanceof agronomo) {
+            return d+d*0.1;
+        }
+        if (aldeano instanceof pacifista) {
+            return d+d*0.05;
+        }else{
+            return d;
+        }
     }
 
     @Override
